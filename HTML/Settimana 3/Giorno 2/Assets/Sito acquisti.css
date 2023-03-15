@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+}
+
+.Logo img{
+    width: 100px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid black;
+}
+
+button{
+    background-color: lightyellow;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+ul li a{
+    margin-right: 20px;
+    background-color: rgb(69, 69, 145);
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Articles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Articles > div{
+    text-align: center;
+}
+
+.Articles h2{
+    flex-basis: 95%;
+}
+
+main img{
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+    margin-left: 20px;
+    
+}
+
+main .Articles h2{
+    margin-left: 10px;
+}
+
+
+
+.Articles h3{
+    text-align: center;
+    margin: auto;
+}
+
+.Articles{
+    order: 1;
+    justify-content: flex-end;
+}
+
+.Cart{
+    order: 2;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.Cart h2{
+    margin-left: 15px;
+}
+
+.Article-1{
+    text-align: center;
+}
+
+.Cart div Img{
+    width: 30px;
+    height: 30px;
+}
+
+.Cart-Products ol li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.Cart-Products ol li{
+    margin-top: 10px;
+}
+
+.Cart-Products{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.Cart .Cart-Products .Cart-Img img {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.Total-Price{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

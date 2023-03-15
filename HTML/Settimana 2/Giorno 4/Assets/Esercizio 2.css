@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    align-items: center;
+}
+
+header div:first-child{
+    flex-grow: 1;
+}
+
+.news-detail{
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+}
+
+main > div:first-child{
+    border-right: 3px solid black; 
+    padding: 20px;
+}
+main > div:last-child{
+    padding: 10px;
+}
+
+.images{
+    display: flex;
+    flex-flow: row wrap
+}
+
+.images > img{
+    width: 180px;
+    padding: 10px;
+}
+
+ol{
+    list-style-type: none;
+}
+.brand-details{
+    border: 2px solid black;
+    display: flex;
+}
+
+.brand{
+    font-weight: bolder;
+    flex-grow: 1;
+}
+
+.brand, .description{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid black;
+    padding: 5px;
+}
+
+.description{
+    flex-grow: 4;
+}
+
+
+
+
+
+
+

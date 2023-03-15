@@ -1,0 +1,142 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    background-color: #1e5280;
+    color: white;
+    padding: 1rem 0;
+}
+
+#title h1 {
+    margin: 0;
+}
+
+#page-header nav {
+    background-color: #adadad;
+    padding: 1rem;
+}
+
+#page-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:auto;
+    background-color: #e46cda;
+    font-size: 0;
+    width: 520px;
+}
+
+#page-header nav ul li {
+    display: inline-block;
+    width: 130px;
+    background-color: #497296;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#page-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 0.5rem 0.3rem;
+    /* background-color: pink; */
+}
+
+#page-header nav ul li a:hover {
+    background-color: pink;
+}
+
+#sect1 {
+    background-color: #964990;
+    padding: 1rem;
+}
+
+#sect1 div {
+    background-color: #e46cda;
+    padding: 1rem;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#sect2 {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    /* background-color: lightblue; */
+}
+
+.card {
+    background-color: #d6caca;
+    padding: 0.7rem;
+    width: 350px;
+    border: 1px solid #9c9292;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.card-title {
+    /* height: 40px; */
+    font-size: 1.2rem;
+    /* background-color: #030f1a; */
+}
+
+.card-image {
+    height: 200px;
+    background-color: #030f1a;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0.6rem;
+    border: 1px solid #9c9292;
+}
+
+.img-maldives {
+    background-image: url("../images/maldives.jpg");
+}
+
+.img-canaries {
+    background-image: url("../images/canaries.jpg");
+}
+
+.card-content {
+    /* height: 100px; */
+    /* background-color: #030f1a; */
+    margin-top: 0.6rem;
+}
+
+.card-content div:nth-child(1) {
+    display: inline-block;
+    width: 60%;
+}
+
+.card-content div:nth-child(2) {
+    /* background-color: #964990; */
+    /* height: 20px; */
+    display: inline-block;
+}
+
+.card-content div:nth-child(2) ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.card-footer {
+    /* height: 30px;
+    background-color: #030f1a; */
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    text-align: right;
+    border-top: 1px solid #9c9292;
+    padding-top: 0.3rem;
+}
+
+

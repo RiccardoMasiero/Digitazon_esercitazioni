@@ -1,0 +1,203 @@
+<!--  Scrivere per ogni tag visto fino ad ora il suo utilizzo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario</title>
+
+</head>
+<body>
+    <div>
+        <h3> h1-h6</h3>
+        <hr>
+        <span>
+            Permette di scrivere titoli di varie dimensioni (dalla più grande alla più piccola). Ad esclusione di h1, tutti gli altri possono essere utilizzati più volte nela stessa pagina.
+        </span>
+        <h4>Esempio</h4>
+        <pre>
+            <code>
+                &lth1&gtTesto 1&lt/h1&gt
+                &lth2&gtTesto 2&lt/h1&gt
+                &lth3&gtTesto 3&lt/h1&gt
+                &lth4&gtTesto 4&lt/h1&gt
+                &lth5&gtTesto 5&lt/h1&gt
+                &lth6&gtTesto 6&lt/h1&gt
+                <h1>Testo 1</h1>
+                <h2>Testo 2</h2>
+                <h3>Testo 3</h3>
+                <h4>Testo 4</h4>
+                <h5>Testo 5</h5>
+                <h6>Testo 6</h6>
+
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <h3>Tag di formattazione parte 1</h3>
+        <hr>
+        <span>Permette di formattare il testo. Hanno un corrispettivo semanticamente più forte</span>
+        <h4>Esempio</h4>
+        <pre>
+            <code>
+                &ltb&gtTesto grassetto&lt/b&gt
+                &lti&gtTesto corsivo&lt/i&gt
+                &ltu&gtTesto sottolineato&lt/u&gt
+                &ltdel&gtTesto cancellato&lt/del&gt
+                &ltsup&gtApice&lt/sup&gt
+                &ltsub&gtPedice&lt/sub&gt
+                <p>
+                    <b>Testo grassetto,</b> <i>Testo corsivo,</i> <u>Testo sottolineato,</u> <del>Testo cancellato,</del> <span>x<sup>2</sup>,</span><span>H<sub>2</sub>O.</span>
+                </p>
+
+            </code>
+        </pre>
+    </div>
+
+
+    <div>
+        <h3>div</h3>
+        <hr>
+        <span>
+        Il div è un contenitore generico e un elemento di blocco ( <i>Block level element</i>). <br> Ciò significa che ha dimensioni impostabili, larhezza che varia in base al contenitore e altezza generata dal contenuto  
+        </span>
+        <h4>Esempio</h4>
+        <pre>
+         <code>
+            &ltdiv&gt
+                &ltmain&gt
+                    &ltarticle&gt
+                        &lth4&gtLorem&lt/h4&gt
+                        &ltp&gtLorem ipsum dolor sit amet consectetur adipisicing elit.&lt/p&gt   
+                    &lt/article&gt
+                &lt/main&gt
+                &ltbutton&gtCliccami&lt/button&gt
+            &lt/div&gt
+
+
+
+
+         </code>
+        </pre>
+    </div>
+
+    <div>
+        <h3>span</h3>
+        <hr>
+        <span> E' un generico contenitore e di tipo (<i>inline element</i>) che può ragruppare elementi utilizzando gli attributi class e id. <br> Ciò significa che ha dimensioni non impostabili se non con css, larghezza che varia in base al contenuto e altezza generata dal contenuto.
+        </span>
+        <h4>Esempio</h4>
+        <pre>
+            <code>
+                &ltspan&gtLorem ipsum dolor sit amet consectetur adipisicing elit.&lt/span&gt
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <h3>Justify-content</h3>
+        <hr>
+        <span>
+            Allinea gli elementi orizzontalmente e accetta i seguenti valori: <br>
+
+            <ol>
+
+                <li><b>flex-start</b>: Allinea gli elementi alla sinistra del contenitore. <br> </li>
+                <li><b>flex-end</b>: Allinea gli elementi alla destra del contenitore. <br> </li>
+                <li><b>center</b>: Allinea gli elementi al centro del contenitore. <br> </li>
+                <li><b>space-between</b>: Separa gli elementi con uguale spazio tra di loro. <br> </li>
+                <li><b>space-around</b>: Separa gli elementi con uguale spazio attorno ad essi. </li>
+            </ol>
+
+        </span>
+    </div>
+
+    <div>
+        <h3>Align-items</h3>
+        <hr>
+        <span>
+            Questa proprietà CSS allinea gli elementi verticalmente ed accetta i seguenti valori: <br>
+            <ol>
+                <li><b>flex-start</b>: Allinea gli elementi all'inizio del loro contenitore.</li>
+                <li><b>flex-end</b>: Allinea gli elementi alla fine del loro contenitore.</li>
+                <li><b>center</b>: Centra gli elementi verticalmente.</li>
+                <li><b>baseline</b>: Gli elementi vengono disposti in modo da allineare le loro linee di base.</li>
+                <li><b>stretch</b>: Gli elementi sono allungati per occupare tutto il contenitore.</li>
+            </ol>
+        </span>
+    </div>
+    <div>
+        <h3>Flex-direction</h3>
+        <hr>
+        <span>
+            Questa proprietà definisce la direzione in cui gli elementi verranno posizionati nel contenitore e accetta i seguenti valori: <br>
+            <ol>
+                <li><b> row </b>: Gli elementi sono posizionati nella stessa direzione del testo.</li>
+                <li><b>row-reverse</b>: Gli elementi sono posizionati nella direzione opposta al testo.</li>
+                <li><b>column</b>: Gli elementi sono posizionati dall'alto verso il basso.</li>
+                <li><b>column-reverse</b>: Gli elementi sono posizionati dal basso verso l'alto.</li>
+            </ol>
+        </span>
+    </div>
+    <div>
+        <h3>Order</h3>
+        <hr>
+        <span>
+            A volte invertire l'ordine di visualizzazione delle righe o delle colonne non è sufficiente. <br>
+            In questi casi possiamo applicare la proprietà <b>ORDER sui singoli elementi</b>. <br> 
+            Ogni elemento ha assegnato il valore 0 di default, ma è possibile utilizzare questa proprietà per assegnare un valore intero positivo o negativo.
+        </span>
+    </div>
+    <div>
+        <h3>Align-self</h3>
+        <hr>
+        <span>
+            Un'altra proprietà che è possibile applicare ai <b>SINGOLI ELEMENTI</b> è <b>ALIGN-SELF</b>. <br>
+             Essa accetta gli stessi valori di align-items.
+        </span>
+    </div>
+    <div>
+        <h3>Flex-wrap</h3>
+        <hr>
+        <span>
+            Un altra proprietà css è Flex-wrap che accetta i seguenti valori:
+            <ol>
+                <li> <b>nowrap</b>: Ogni elemento viene sistemato nella stessa riga.</li>
+                <li> <b>wrap</b>: Gli elementi vengono sistemati su più righe se non c'è spazio per tutti su una sola riga.</li>
+                <li> <b>wrap-reverse</b>: Gli elementi vengono disposti su più righe in ordine inverso.</li>
+            </ol>
+        </span>
+    </div>
+    <div>
+        <h3>Flex-flow</h3>
+        <hr>
+        <span>Flex-flow combina le due proprietà <b> Flex-wrap e Flex-direction assieme</b>. <br>
+              Questa proprietà accetta un valore per ognuna delle due proprietà separati da uno spazio.
+        </span>
+    </div>
+    <div>
+        <h3>Align-content</h3>
+        <hr>
+        <span>Determina lo spazio tra le linee mentre align-items <br>
+            determina come gli elementi nell'insieme vengono disposti <br>
+            nel contenitore. <br>
+            Se c'è una sola linea, align-content non ha alcun effetto. <br>
+            Questa proprietà accetta i seguenti valori:
+            <ol>
+                <li> <b>flex-start</b>: Le linee sono raggruppate all'inizio del contenitore.</li>
+                <li><b>flex-end</b>: Le linee sono raggruppate alla fine del contenitore.</li>
+                <li><b>center</b>: Le linee vengono centrate verticalmente nel contenitore.</li>
+                <li><b>space-between</b>: Le linee occupano tutto lo spazio del contenitore e sono separate tra di loro dalla stessa quantità di spazio.</li>
+                <li><b>space-around</b>: Le linee sono separate dalle altre linee, e dall'inizio e dalla fine del contenitore</li>
+                <li><b>stretch</b>: Le linee vengono allungate per occupare tutto lo spazio disponibile.
+                </li>
+
+            </ol>
+        
+        </span>
+    </div>
+
+</body>
+</html>

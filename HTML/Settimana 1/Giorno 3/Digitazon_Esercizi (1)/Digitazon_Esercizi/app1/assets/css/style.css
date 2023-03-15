@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topHeader {
+    background-color: #98c2c2;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#topHeader h1 {
+    margin: 0 0 20px 0;
+}
+
+#topHeader nav {
+    background-color: #688888;
+    padding: 6px;
+}
+
+#topHeader nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#topHeader nav a.selected {
+    color: blue;
+}
+
+#articles article {
+    background-color: #d8e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#articles h2 {
+    margin-top: 0;
+}
+
+#articles article footer {
+    background-color: #103030;
+    color: #d8e6e6;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+#articles article footer a {
+    color: #688888;
+}

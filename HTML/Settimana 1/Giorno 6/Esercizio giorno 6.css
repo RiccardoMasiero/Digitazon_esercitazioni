@@ -1,0 +1,39 @@
+html{
+    font-size: 18px;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+#Brand img{
+    width: 110px;
+    float: left;
+}
+
+#Menu img{
+    width: 50px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#page-header nav ul {
+    padding-top: 5rem;
+    list-style-type: none;
+    margin: auto;
+    width: 500px;
+}
+
+#page-header nav ul li{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#page-header nav ul li a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 0.5rem 0.3rem;
+
+}
