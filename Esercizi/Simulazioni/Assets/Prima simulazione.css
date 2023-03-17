@@ -1,0 +1,192 @@
+html{
+    background-color: black;
+}
+
+.Logo img{
+    width: 180px;
+    height: 60px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+label{
+    color: white;
+}
+
+button{
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+
+}
+
+button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+
+
+.Vector-user{
+    display: flex;
+    list-style-type: none;
+}
+
+.Vector-user a{
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: #1dda63;
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+    color: black;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.Vector-user a:hover{
+    filter: brightness(150%);
+
+}
+
+.Background img{
+    background-image: url("Assets/Immages/Avicii_Background.jpg");
+    opacity: 0.9;
+    width: 650px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    background-color: rgba(32,32,32,255);
+    padding-left: 20px;
+
+
+}
+
+
+.Center{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    background-color: rgba(32,32,32,255);
+    margin: 0px;
+}
+
+.Side-bar{
+    flex-basis: 20%;
+    border-right: 2px solid white;
+}
+
+.Side-bar ul{
+    list-style-type: none;
+
+}
+
+.Side-bar li{
+    margin-top: 15px;
+    border: 1px solid white;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(32,32,32,255) ;
+    transition: background-color 0.3s ease;
+    
+}
+
+.Side-bar li:hover{
+    background-color: rgba(46,46,46,255);
+}
+
+
+.Side-bar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    
+}
+
+.fa-solid{
+    color: white;
+}
+
+.fa-regular{
+    color: white;
+}
+
+.fa-brands{
+    color: white;
+}
+
+
+.Songs{
+    flex-basis: 65%;
+    justify-content: flex-start;
+}
+
+.Songs-name{
+    margin-right: 100px;
+}
+
+
+
+.Songs .Songs-name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+.Songs-name li{
+    background-color: rgba(32,32,32,255) ;
+    transition: background-color 0.3s ease;
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+    border-bottom: 1px solid white;
+}
+
+.Songs-name li:hover{
+    background-color: rgba(46,46,46,255);
+    filter: brightness(150%);
+}
+
+.Songs-name li a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+}
+
+
+
+.Songs-name img{
+    width: 40px;
+    height: 40px;
+}
+
+.social{
+    background-color:rgba(32,32,32,255);
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    cursor: pointer;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+
