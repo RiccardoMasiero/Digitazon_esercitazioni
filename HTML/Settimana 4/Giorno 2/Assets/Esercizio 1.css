@@ -1,0 +1,86 @@
+html{
+    background-color:black;
+}
+
+body{
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+input{
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img{
+    border-radius: 100%;
+    width: 40px;
+}
+
+.fa-solid{
+    color: white;
+    font-size: 25px;
+}
+
+.fa-brands{
+    color: white;
+    font-size: 25px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(36, 37, 38);
+    border-bottom: 1px solid gray;
+    height: 50px;
+}
+
+.left input{
+    justify-content: center;
+    align-self: center;
+}
+
+.center{
+    display: flex;
+}
+
+.center li{
+    align-self: center;
+}
+
+.User-Bar-1{
+    display: flex;
+    gap: 80px;
+    margin: 0px;
+
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.User-Bar-2{
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+}
+
+.User-Bar-2 li{
+    align-self: center;
+}
+
+.right img{
+    width: 30px;
+}
