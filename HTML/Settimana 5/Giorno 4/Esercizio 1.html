@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi js</title>
+</head>
+<body>
+    <script>
+        //Esercizio 1: dato un array di 4 stringhe a piacere, stampare ogni valore stringa invertito (es 'ciao' diventa 'oaic', ...)
+        // 1 step selezionare singolarmente ogni stringa con un ciclo for 
+        // 2 step stampare ogni singola stringa con i caratteri invertiti
+
+        let Stringhe = ["ciao","mano","cane","torta"]
+
+        for (let i = 0;  i < Stringhe.length; i++) {
+            console.log(Stringhe[i].split("").reverse().join(""));
+            
+        }
+
+        //Esercizio 2: dato un array di 10 numeri a piacere, stampare quanti sono i numeri positivi, quelli negativi, quelli dispari e quelli pari (per trovare il resto di una divisione utilizzare l'operatore %)
+        // 1 step dichiara valori array
+        //2 step creare un ciclo for
+        //3 step creare un ciclo if per dividere i diversi casi che bisogna ottenere 
+
+        //Esercizio 3:
+
+
+
+
+
+        const strings = ["aereo_", "marcus_", "adam_"];
+      let firstndLast = 0;
+
+      for (let s = 0; s < strings.length; s++) {
+        if (
+          strings[s].charAt(0) == "a" &&
+          strings[s].charAt(strings[s].length - 1 == "_")
+        ) {
+          firstndLast++;
+        }
+      }
+      console.log(firstndLast);
+
+      //Esercizio 4
+
+      const specialWord = "hUnter$_33";
+      const neutralWord = "ghotam_4";
+
+      if (/[aeiouyAEIOUY]/.test(specialWord) && /_/.test(specialWord) && /\$/.test(specialWord) && /[0-9]/.test(specialWord)) {
+        console.log(specialWord + " la password è OK ");
+      
+      } else{
+        console.log('password non ok ');
+      }
+
+
+
+    </script>
+</body>
+</html>
