@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Set and Map</title>
+</head>
+<body>
+    <!-- creare una funzione compareMap che accetta in ingresso due mappe.
+    La funzione restituisce true SE le due mappe sono mappe, SE hanno lo stesso numero di elementi e per le stesse chiavi, gli stessi valori. 
+    Testare il funzionamento di compareMap passando due mappe diverse nella prima chiamata, e due mappe uguali nella seconda chiamata
+    ----------------------------------------------------------- -->
+    <script> 
+    function compareMap(Map1,Map2,v,k) {
+        if (Map1 instanceof Map == true && Map2 instanceof Map == true) {
+            if(Map1.size == Map2.size ) {
+                let text = "";
+                Map1.forEach (function(value, key) {
+                text += key + ' = ' + value;
+                })
+                let text2 = "";
+                Map2.forEach (function(value, key) {
+                text2 += key + ' = ' + value;
+                }) 
+                if (text == text2) {
+                console.log("Le mappe sono uguali");
+                
+            }else{
+                console.log("Stesso numero di chiavi e valori ma non sono identiche");
+            }
+
+
+            } else{
+                console.log("Non sono uguali");
+            }
+
+            
+        } 
+    }
+    const m1 = new Map ([
+        ["Name", "Marco"],
+        ["Surname", "Bianchi"],
+    ])
+
+    const m2 = new Map([
+        ["Name", "Luigi" ],
+        ["Surname", "Rossi"],
+    ])
+
+    const m3 = new Map([
+        ["Name", "Luigi" ],
+        ["Surname", "Rossi"],
+    ])
+
+    compareMap(m1,m3)
+
+    // Ex 2
+    // creare una funzione compareSet che accetta in ingresso due set.
+    // La funzione restituisce true SE i due set sono set, SE hanno lo stesso numero di elementi e  gli stessi valori. 
+    // Testare il funzionamento di compareSet passando due set diversi nella prima chiamata, e due set uguali nella seconda chiamata
+    // -----------------------------------------------------------
+
+    function compareSet(Set1,Set2) {
+        if (Set1 instanceof Set == true && Set2 instanceof Set == true) {
+            if(Set1.size == Set2.size ) {
+                let text = "";
+                Set1.forEach (function(value, key) {
+                text += key + ' = ' + value;
+                })
+                let text2 = "";
+                Set2.forEach (function(value, key) {
+                text2 += key + ' = ' + value;
+                }) 
+                if (text == text2) {
+                console.log("I Set sono uguali");
+                
+            }else{
+                console.log("Stesso numero di chiavi e valori ma non sono identici");
+            }
+
+
+            } else{
+                console.log("I Set non sono uguali");
+            }
+
+            
+        }
+    }
+
+    const s1 = new Set ("10","20")
+    const s2 = new Set ("10","20","30")
+    const s3 = new Set ("Banana")
+
+    compareSet(s1,s3)
+
+    // Ex 3
+    // realizzare la funzione uniqueArray che prende in ingresso un array e rimuove tutti gli elementi duplicati, restituendo un nuovo array privo quindi di valori duplicati.
+    // Chiamare la funzione con il valore [10, 'ciao', 20, 'ciao', 'javascript', 10] e stampare in output il nuovo valore
+    // -----------------------------------------------------------
+    function uniqueArray(array){
+            const set1 = new Set(array);
+            console.log(set1)
+         }
+        
+        array = [10, 'ciao', 20, 'ciao', 'javascript', 10]
+        uniqueArray(array)
+
+    //Ex 4
+    // realizzare due istanze di Map che rappresentano due studenti che abbiano la seguente struttura:
+    // - name, lastname, rates 
+    // dove name e lastname sono stringhe e rates è un array di 5 numeri
+    // assegnare valori a piacere per ogni chiave,
+    // es mario rossi 4, 5, 6, 4, 3 e luigi verdi 8, 7, 4, 9, 9
+    // creare la funzione bestStudent, che prende in ingresso due mappe 
+    // che rappresentano uno studente, e restituisce il nome e il cognome dello studente
+    // che ha la media voto migliore tra i due.
+    // Richiamare questa funzione passando le due mappe create precedentemente
+    
+    
+
+    </script>
+</body>
+</html>

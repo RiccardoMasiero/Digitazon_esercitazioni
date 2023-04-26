@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- Dato il seguente JSON:
+[
+    {
+        "fullname": "Yoshi", "rate": [4, 5, 4, 6]
+    },
+    {
+        "fullname": "Wario", "rate": [4, 9, 6, 7]
+    },
+    {
+        "fullname": "Toad", "rate": [8, 9, 9, 8]
+    }
+]
+salvarlo in un template string, parsarlo con l'apposita strategia e stabilire algoritmicamente chi è lo studente migliore e chi è il peggiore.
+------------------------------------------------------------------------>
+<script>
+
+// Ex 5
+// creare un array di oggetti, che rappresentano il contenuto di un parola, e avranno proprietà text. 
+// Es { text: 'ciao' }, { text: 'javascript' }
+// Nell'array inserire 5 oggetti con questo template e valori a piacere.
+// Creare una funzione parseStrings che prende in ingresso un array di oggetti con la struttura descritta e restituisca quante stringhe contengono la lettera 'x'.
+
+
+const words =[
+    {text: "rosso"},
+    {text: "verde"},
+    {text: "xilofono"},
+    {text: "ajax"},
+    {text: "nero"},
+
+]
+let a = words.text
+for (let a = 0; a < words.length; a++) {
+    const string  = words[a];
+    
+    console.log(words[a]);
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ex 1
+    creare la funzione selector, che accetta una stringa in ingresso è in grado di stabilire se è un selettore CSS valido (selettore semplice, senza annidamenti), tra:
+    - selettore di id
+    - selettore di classe
+    - selettore di un elemento tra div, span e img
+    Se lo è, restituisce true, altrimenti false.
+    In fase di chiamata, stampare un apposito messaggio in ouput, per ognuna delle seguenti chiamate:
+    selector('#myDiv')  -> è un selettore valido, di id
+    selector('.myDiv')  -> è un selettore valido, di classe
+    selector('div')          -> è un selettore valido, di elemento div
+    selector('paperino')  -> non è un selettore valido
+    selector('ul') -> non è un selettore valido (non è div, span o img) -->
+
+<script>
+    const validator = ['div', 'span', 'img']
+
+function selector (pointer){
+    if(pointer.charAt(0)== '#'){
+console.log(pointer)
+return true
+} else if (pointer.charAt(0)== '.'){
+console.log(pointer)
+return true
+}
+else {
+    for( let i=0; i < validator.length; i++){
+        if(pointer == validator[i]) {
+            console.log('e un selettore valido' + validator[i])
+        return true
+
+        }
+        
+    }
+}
+console.log('non E UN SELETTORE VALIDO ')
+}
+
+
+selector ('#mydiv')
+selector ('.myDiv')
+selector ('div')
+selector ('paperino')
+selector ('ul')
+
+/*
+----------------
+Ex 2
+creare una funzione checkArray che prende in ingresso un array di N numeri e stampa:
+- quanti sono pari
+- quanti sono dispari
+- se contiene il numero 10
+- se è un array o meno
+chiamare con:
+checkArray([90, 78, 45, 34])
+checkArray([0, 0, 0])
+checkArray([10])
+checkArray(10)*/
+function checkArray (s){ 
+    let conteggiodeipari = 0
+    for( i = 0; i < s.length; i++){
+        if ( (s[i] % 2)== 0){
+            conteggiodeipari++ 
+
+            if ((s[i]) == 10){
+                console.log('si, contiene 10')
+            }
+        } 
+        
+    }
+    if(Array.isArray(s)){
+        console.log('array vero')
+    }
+    else {
+        console.log('non array')
+    }
+   
+    console.log(conteggiodeipari + ' pari')
+    console.log((s.length-conteggiodeipari) + ' dispari')
+}
+
+
+checkArray([90, 78, 45, 34])
+checkArray([0, 0, 0])
+checkArray([10])
+checkArray(10)
+
+
+
+
+</script>
+
+</body>
+</html>

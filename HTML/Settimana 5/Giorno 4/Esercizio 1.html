@@ -8,23 +8,24 @@
 </head>
 <body>
     <script>
-        //Esercizio 1: dato un array di 4 stringhe a piacere, stampare ogni valore stringa invertito (es 'ciao' diventa 'oaic', ...)
+        // Esercizio 1: dato un array di 4 stringhe a piacere, stampare ogni valore stringa invertito (es 'ciao' diventa 'oaic', ...)
         // 1 step selezionare singolarmente ogni stringa con un ciclo for 
         // 2 step stampare ogni singola stringa con i caratteri invertiti
 
         let Stringhe = ["ciao","mano","cane","torta"]
 
         for (let i = 0;  i < Stringhe.length; i++) {
-            console.log(Stringhe[i].split("").reverse().join(""));
+            
+          console.log(Stringhe[i].split("").reverse().join(""));
             
         }
 
-        //Esercizio 2: dato un array di 10 numeri a piacere, stampare quanti sono i numeri positivi, quelli negativi, quelli dispari e quelli pari (per trovare il resto di una divisione utilizzare l'operatore %)
+        // Esercizio 2: dato un array di 10 numeri a piacere, stampare quanti sono i numeri positivi, quelli negativi, quelli dispari e quelli pari (per trovare il resto di una divisione utilizzare l'operatore %)
         // 1 step dichiara valori array
-        //2 step creare un ciclo for
-        //3 step creare un ciclo if per dividere i diversi casi che bisogna ottenere 
+        // 2 step creare un ciclo for
+        // 3 step creare un ciclo if per dividere i diversi casi che bisogna ottenere 
 
-        //Esercizio 3:
+        // Esercizio 3:
 
 
 
@@ -43,10 +44,15 @@
       }
       console.log(firstndLast);
 
+
+
+
+
+      
       //Esercizio 4
+      //data una stringa a piacere, SE questa contiene una vocale, un underscore, un dollaro e un numero, stampare 'password OK', altrimenti, stampare 'password NOT OK'
 
       const specialWord = "hUnter$_33";
-      const neutralWord = "ghotam_4";
 
       if (/[aeiouyAEIOUY]/.test(specialWord) && /_/.test(specialWord) && /\$/.test(specialWord) && /[0-9]/.test(specialWord)) {
         console.log(specialWord + " la password è OK ");
@@ -54,6 +60,11 @@
       } else{
         console.log('password non ok ');
       }
+
+
+
+
+      //Esercizio 5
 
 
 

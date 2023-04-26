@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creare la funzione diffArray che prende in ingresso due array.
+    Gli array dovranno contenere da 3 a 8 numeri.
+    All'interno della funzione trovare il numero più grande del primo array e il numero più piccolo del secondo array.
+    La funzione restituisce la differenza tra il primo numero e il secondo. 
+    Stampare il risultato in output.
+    ----------------------------------------------------------------->
+    <script>
+        function diffArray(arr1, arr2) {
+        let max = arr1[0];
+        let min = arr2[0];
+  
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] > max) {
+            max = arr1[i];
+            }
+        }
+  
+        for (let i = 0; i < arr2.length; i++) {
+            if (arr2[i] < min) {
+            min = arr2[i];
+            }
+        }
+  
+        return max - min;
+    }
+
+        const array1 = [3, 5, 7, 7, 1, 13, 15, 16];
+        const array2 = [4, 6, 8, 10];
+
+        console.log(diffArray(array1, array2));
+
+        // Ex 2
+        // creare la funzione countVowels che prende in ingresso una stringa, e restituisce una mappa che avrà per chiavi tutte le vocali alfabetiche e per rispettivi valori il numero di occorrenze di ogni vocale nella stringa
+        // es 'ciao a tutti'   produce  { a => 2, e => 0, i => 2, o => 1, u => 1 }
+        // ---------------------------------------------------------------
+
+        function countVowels(str) {
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+        const vowelMap = new Map();
+  
+            for (let i = 0; i < vowels.length; i++) {
+                vowelMap.set(vowels[i], 0);
+                }
+  
+            for (let i = 0; i < str.length; i++) {
+                 const char = str[i].toLowerCase();
+    
+             if (vowelMap.has(char)) {
+             vowelMap.set(char, vowelMap.get(char) + 1);
+            }
+        }
+  
+            return vowelMap;
+    }
+
+    const string = 'a e i o u';
+    console.log(countVowels(string));
+
+    // Ex 3
+    // creare la funzione invertCase che prende in ingresso una stringa.
+    // Se la stringa è in lower case, restituisce la stringa in upper case.
+    // Se la stringa è in uppe rcase restituisce la stringa in lower case.
+    // Assumere che sia in una forma o l'altra.
+    // ---------------------------------------------------------------
+
+    function invertCase(string) {
+        if (typeof string != "string") {
+        return "Il parametro in ingresso non e' una stringa";
+        } else {
+            if (string == string.toLowerCase()) {
+            return string.toUpperCase();
+        } else if (string == string.toUpperCase()) {
+            return string.toLowerCase();
+            }
+        }
+    }
+
+    let string3 = "BANANA"
+    console.log(invertCase(string3));
+
+    // Ex 4
+    // creare una mappa che rappresenta 5 stili CSS a piacere e stamparla in output.
+    // Creare la funzione showCSS che prende in ingresso la precedente mappa e stampa tutti i suoi elementi.
+    // ---------------------------------------------------------------
+    const cssMap = new Map([
+        ['background-color', 'red'],
+        ['color', 'white'],
+        ['font-size', '20px'],
+        ['border', '2px solid black'],
+        ['text-align', 'center']
+        ]);
+
+    function showCSS(cssMap) {
+        cssMap.forEach((value, key) => {
+            console.log(`${key}: ${value}`);
+        });
+        }
+
+        showCSS(cssMap);
+        
+
+
+
+    </script>
+    
+</body>
+</html>
