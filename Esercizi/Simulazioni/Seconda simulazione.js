@@ -26,6 +26,6 @@ function findAndReplace(Testo, parolaDaCercare, parolaSostitutiva,) {
     return nuovoTesto;
   }
 
-  console.log(findAndReplace('Ciao a tutti belli e brutti','Ciao','oaiC'));
+  console.log(findAndReplace('oaiC a tutti belli e brutti','oaiC','Ciao'));
 
   //ESERCIZIO 2)))))
