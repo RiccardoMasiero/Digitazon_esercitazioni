@@ -18,4 +18,4 @@ function arrayNumbersPlusMinus1(arr,n) {
     return result
 }
 
-console.log(arrayNumbersPlusMinus1([3,4,5],4));
+console.log(arrayNumbersPlusMinus1([3,4,5],2));

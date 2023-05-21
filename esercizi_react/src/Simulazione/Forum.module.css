@@ -1,0 +1,29 @@
+.firstPage{
+    display: flex;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.sideBar{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.postsList{
+    background-color: aqua;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.mainSection{
+    border: 1px solid gray;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 25;
+}

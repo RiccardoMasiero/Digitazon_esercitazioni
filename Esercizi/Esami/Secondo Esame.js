@@ -83,4 +83,25 @@ function testPazzia(str) {
     return pazza;
 }
 
-console.log(testPazzia("church ciao a tutti"));
+console.log(testPazzia("Lui è pazzo"));
+
+
+
+//Interrogazione
+
+function includes(str, arr) {
+    for (let i= 0; i < arr.length; i++) {
+        const element = arr[i];
+        if (arr[i] !== str) {
+            continue           
+        }
+        else{
+            return true
+        }
+    }
+    
+    return false
+}
+
+console.log(includes("b", ["a","b"]));
+
