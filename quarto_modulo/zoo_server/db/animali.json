@@ -1,0 +1,32 @@
+[
+  {
+    "animale": "Leone",
+    "categoria": "mammiferi",
+    "id": 1
+  },
+  {
+    "animale": "Ippopotamo",
+    "categoria": "mammiferi",
+    "id": 2
+  },
+  {
+    "animale": "Ghepardo",
+    "categoria": "mammiferi",
+    "id": 3
+  },
+  {
+    "animale": "Coccodrillo",
+    "categoria": "rettili",
+    "id": 4
+  },
+  {
+    "animale": "Varano",
+    "categoria": "rettili",
+    "id": 5
+  },
+  {
+    "animale": "Tartaruga",
+    "categoria": "rettili",
+    "id": 6
+  }
+]
